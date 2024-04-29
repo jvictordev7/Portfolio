@@ -6,12 +6,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-@media screen and (max-width: 1020px) {
-    .menu-desktop {
-        /*display: none;*/
-    }
-}
-
 /* Exibir o menu móvel apenas em telas menores */
 @media screen and (max-width: 1020px) {
     .btn-abrir-menu {
@@ -117,7 +111,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile{
-    background-color: #000;
+    background-color: #00000052;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -243,7 +237,7 @@ strong {
 }
 
 .especiliadades .especialidades-box img {
-    display: block;
+    display: inline-block;
     margin: auto;
     
 }
