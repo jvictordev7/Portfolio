@@ -6,6 +6,32 @@
     font-family: 'Poppins', sans-serif;
 }
 
+@media screen and (max-width: 1020px) {
+    .menu-desktop {
+        /*display: none;*/
+    }
+}
+
+/* Exibir o menu móvel apenas em telas menores */
+@media screen and (max-width: 1020px) {
+    .btn-abrir-menu {
+        display: block !important;
+    }
+
+    .menu-mobile {
+        width: 70%;
+        display: none; /* Oculta o menu móvel por padrão */
+    }
+
+    .menu-mobile.abrir-menu {
+        display: block; /* Exibe o menu móvel quando estiver aberto */
+    }
+
+    .menu-mobile .overlay-menu {
+        display: block; /* Exibe o overlay do menu móvel */
+    }
+}
+
 body {
     background-color: #000;
     height: 100vh;
