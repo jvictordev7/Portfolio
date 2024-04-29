@@ -237,7 +237,7 @@ strong {
 }
 
 .especiliadades .especialidades-box img {
-    display: inline-block;
+    display: block;
     margin: auto;
     
 }
