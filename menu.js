@@ -13,3 +13,10 @@ menu.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
     menu.classList.remove('abrir-menu')
 })
+
+document.querySelectorAll('.menu-mobile a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('menu-mobile').classList.remove('abrir-menu');
+        document.getElementById('overlay-menu').style.display = 'none';
+    });
+});

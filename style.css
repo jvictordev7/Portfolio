@@ -40,6 +40,10 @@ body {
     display: flex;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
@@ -199,7 +203,6 @@ section.topo-do-site .flex {
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-
 @keyframes flutuar {
     0% {
         top: 0;
@@ -211,46 +214,50 @@ section.topo-do-site .flex {
 }
 
 /* ESTILO DAS ESPECIALIDADES */
-section.especiliadades {
+section.especialidades {
     padding: 40px 4%;
 }
 
-section.especiliadades .flex {
-    gap: 60px;
+section.especialidades .flex {
+    flex-wrap: wrap;
+    gap: 30px; /* Ajuste o espaçamento entre os elementos */
+    justify-content: center;
 }
 
 strong {
     color: #03EE0A;
 }
 
-.especiliadades .especialidades-box {
+.especialidades .especialidades-box {
     color: #fff;
     padding: 40px;
     border-radius: 20px;
     margin-top: 45px;
     transition: .3s;
+    flex: 1 1 calc(20% - 30px); /* Ajuste o tamanho para caber 5 por linha */
+    max-width: calc(20% - 30px);
 }
 
-.especiliadades .especialidades-box:hover {
+.especialidades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #03EE0A;
 }
 
-.especiliadades .especialidades-box img {
+.especialidades .especialidades-box img {
     display: block;
     margin: auto;
-    
 }
 
-.especiliadades .especialidades-box h3 {
+.especialidades .especialidades-box h3 {
     text-align: center;
     font-size: 28px;
     margin: 15px 0;
 }
 
-.especiliadades .especialidades-box p {
+.especialidades .especialidades-box p {
     text-align: center;
 }
+
 
 /* ESTILO DO SOBRE */
 section.sobre {
@@ -389,7 +396,6 @@ form .btn-enviar input {
 }
 
 /* ESTILO DO RODAPÉ */
-
 footer {
     padding: 40px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
@@ -457,8 +463,17 @@ footer .line-footer p a {
     }
 
     /* ESPECIALIDADES */
-    section.especiliadades {
+    section.especialidades {
         padding: 40px 8%;
+    }
+
+    section.especialidades .flex {
+        flex-direction: column;
+    }
+
+    .especialidades-box {
+        flex: 1 1 auto;
+        max-width: 100%;
     }
 
     /* SOBRE */
