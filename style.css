@@ -519,4 +519,10 @@ footer .line-footer p a {
     footer .line-footer {
         text-align: center;
     }
+    
+    .minha-lista li {
+        color: blue;
+        font-size: 18px;
+      }
+      
 }
